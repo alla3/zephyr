@@ -94,6 +94,12 @@
 	scl-pin = <59>;
 };
 
+&pwm0 {
+	status = "ok";
+	ch0-pin = <3>;
+	ch0-inverted;
+};
+
 /*
  * By default, not adding all available SPI instances (spi0, spi2, spi3) due to
  * pins not defined for mesh board.
